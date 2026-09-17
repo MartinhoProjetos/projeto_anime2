@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Projeto Anime</title>
+</head>
+<body>
+
+  <header>
+    <h1>Projeto One Piece</h1>
+    <nav>
+      <ul>
+        <li><a href="biografia.html">Biografia</a></li>
+        <li><a href="tripulacao.html">Tripulação</a></li>
+        <li><a href="aliados.html">Aliados</a></li>
+        <li><a href="inimigos.html">Inimigos</a></li>
+        <li><a href="ilhas.html">Ilhas</a></li>
+        <li><a href="poderes.html">Poderes</a></li>
+        <li><a href="sagas.html">Sagas</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="midia.html">Mídia</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Formulário Avançado de Inscrição na Tripulação</h2>
+
+      <form action="#" method="post">
+        <p>
+          <label for="nome">Nome Completo:</label><br>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </p>
+
+        <p>
+          <label for="email">E-mail de Contato:</label><br>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        </p>
+
+        <p>
+          <label for="data-nasc">Data de Nascimento:</label><br>
+          <input type="date" id="data-nasc" name="data_nascimento" required>
+        </p>
+
+        <p>
+          <label for="personagem">Personagem Favorito:</label><br>
+          <input type="text" id="personagem" name="personagem" list="lista-personagens" placeholder="Escolha ou digite..." required>
+          <datalist id="lista-personagens">
+            <option value="Monkey D. Luffy">
+            <option value="Roronoa Zoro">
+            <option value="Nami">
+            <option value="Usopp">
+            <option value="Sanji">
+            <option value="Tony Tony Chopper">
+            <option value="Nico Robin">
+            <option value="Franky">
+            <option value="Brook">
+            <option value="Jinbe">
+          </datalist>
+        </p>
+
+        <p>
+          <label for="cor">Cor do seu Jolly Roger (Bandeira):</label><br>
+          <input type="color" id="cor" name="cor_bandeira" value="#ff0000">
+        </p>
+
+        <p>
+          <label for="afinidade">Nível de Afinidade com o Mar (1 a 100):</label><br>
+          <input type="range" id="afinidade" name="afinidade" min="1" max="100" value="50">
+        </p>
+
+        <p>
+          <label for="avatar">Envie seu Desenho / Avatar (Arquivo):</label><br>
+          <input type="file" id="avatar" name="avatar" required>
+        </p>
+
+        <p>
+          <button type="submit">Enviar Formulário</button>
+          <button type="reset">Limpar Campos</button>
+        </p>
+      </form>
+    </section>
+
+    <aside>
+      <h3>Aviso Importante</h3>
+      <p>Todos os campos com preenchimento obrigatório foram validados nativamente com a tag <code>required</code> do HTML5.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Projeto Anime - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
